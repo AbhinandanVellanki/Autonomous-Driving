@@ -236,6 +236,9 @@ class Controller:
 def main():
     # create vehicle
     ego = Vehicle(0, 0, 0)
+    vel = 10
+    vel_x = vel * math.cos(ego.yaw)
+    vel_y = vel * math.sin(ego.yaw)
     plotVehicle(ego.x, ego.y, ego.yaw)
 
     # target velocity
